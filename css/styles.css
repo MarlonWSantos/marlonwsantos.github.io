@@ -3032,32 +3032,32 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #989999;
+  border-color: #989999;
 }
 .btn-primary:hover {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
+  background-color: #828282;
+  border-color: #828282;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
-  background-color: #c77556;
-  border-color: #c46d4c;
-  box-shadow: 0 0 0 0.25rem rgba(161, 79, 48, 0.5);
+  background-color: #828282;
+  border-color: #828282;
+  box-shadow: 0 0 0 0.25rem rgba(94, 94, 94, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #000;
-  background-color: #ca7d60;
-  border-color: #c46d4c;
+  background-color: #9a9c9e;
+  border-color: #9a9c9e;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(161, 79, 48, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(94, 94, 94, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #9a9c9e;
+  border-color: #9a9c9e;
 }
 
 .btn-secondary {
@@ -11459,3 +11459,65 @@ section.resume-section .resume-section-content {
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
  */
+ 
+ .portfolio .portfolio-item {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.portfolio .portfolio-item .portfolio-item-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+  opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+  font-size: 1.5rem;
+}
+ 
+ .portfolio-modal .btn-close {
+  color: #1abc9c;
+  font-size: 2rem;
+  padding: 1rem;
+}
+.portfolio-modal .portfolio-modal-title {
+  font-size: 2.25rem;
+  line-height: 2rem;
+}
+@media (min-width: 992px) {
+  .portfolio-modal .portfolio-modal-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-lg,
+.modal-xl {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-xl {
+    max-width: 1140px;
+  }
+}
+ 
+ .divider-custom {
+  margin: 1.25rem 0 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
